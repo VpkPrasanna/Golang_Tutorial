@@ -17,3 +17,8 @@ to build a package which is compatible for Mac
 ```python
 GOOS="darwin" go build 
 ```
+To find the list of possible platforms  that golang supports
+
+```python
+go tool dist list
+```
