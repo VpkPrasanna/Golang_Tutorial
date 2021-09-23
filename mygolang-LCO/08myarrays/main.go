@@ -19,6 +19,7 @@ func main() {
 	// Another way to define the sttings
 
 	var vegList = [5]string{"Potato", "tomato", "beans"}
+	fmt.Printf("The type of vegList is %T\n", vegList)
 	fmt.Println("The Veglist is :,", vegList)
 	fmt.Println("The len of the veg list is :", len(vegList))
 
