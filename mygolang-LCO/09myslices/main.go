@@ -41,4 +41,13 @@ func main() {
 	value := sort.IntsAreSorted(highscores)
 	fmt.Println(value)
 
+	// how to remove a value from slice based on index
+	var courses = []string{"react", "javascript", "swift", "mongo", "python"}
+
+	// index to be removed is 2
+	var idx int = 2
+	courses = append(courses[:idx], courses[idx+1:]...)
+	// we will see why that ... is mandatory in a seperate module . With out that it will cause us error
+	fmt.Println(courses)
+
 }
